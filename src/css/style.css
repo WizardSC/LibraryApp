@@ -27,3 +27,7 @@
 .round-layout-card{
     -fx-background-radius: 15;
 }
+
+.round-layout-rcm{
+    -fx-background-radius: 10;
+}
