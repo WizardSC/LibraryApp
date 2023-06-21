@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="white-background" stylesheets="@../css/style.css">
          <children>
@@ -218,17 +218,21 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" styleClass="transparent" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="40.0" prefWidth="210.0" text="Recently Added">
+            <Label prefHeight="46.0" prefWidth="210.0" text="Recently Added">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
                <padding>
-                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
                </padding>
             </Label>
-            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+            <ScrollPane prefHeight="238.0" prefWidth="1090.0" styleClass="transparent" stylesheets="@../css/style.css">
                <content>
-                  <HBox prefHeight="187.0" prefWidth="1112.0" styleClass="transparent" stylesheets="@../css/style.css" />
+                  <HBox fx:id="cardLayout" alignment="CENTER" prefHeight="225.0" prefWidth="1112.0" spacing="15.0" styleClass="transparent" stylesheets="@../css/style.css">
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="-10.0" />
+                     </padding>
+                  </HBox>
                </content>
             </ScrollPane>
          </children>
